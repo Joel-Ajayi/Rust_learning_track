@@ -15,8 +15,10 @@ fn serve_order() {}
 
 mod house_back;
 
+use house_back::Brakefast;
+
 pub fn eat_at_res() {
-    let mut meal = house_back::Brakefast::summer("toast");
+    let mut meal = Brakefast::summer("toast");
     meal.toast = "Orange".to_string();
 }
 
