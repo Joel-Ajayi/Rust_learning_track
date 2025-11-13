@@ -144,7 +144,8 @@ impl fmt::Display for Point2 {
     }
 }
 
-/*We can define a trait on a type as long as the
+/*orphan rule
+We can define a trait on a type as long as the
  trait or type is defined in our crate.
  Example here is Display trait, not defined on our crate, but Vec
  type is also not defined in our crate.
